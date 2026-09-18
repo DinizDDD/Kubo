@@ -13,7 +13,16 @@ class AppNavbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: SizedBox(
         height: 50.0,
-        child: Center(child: Image.asset("navbar_logo.png")),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Center(child: Image.asset("navbar_logo.png")),
+            IconButton(
+              onPressed: () => {},
+              icon: Icon(Icons.search, color: AppColors.NAVBAR_FONT),
+            ),
+          ],
+        ),
       ),
       backgroundColor: AppColors.NAVBAR_BACKGROUND,
       leading: IconButton(
