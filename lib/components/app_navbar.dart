@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kubo/ui/Colors.dart';
+import 'package:kubo/ui/app_colors.dart';
 
 class AppNavbar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -14,23 +14,22 @@ class AppNavbar extends StatelessWidget implements PreferredSizeWidget {
       title: SizedBox(
         height: 50.0,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Center(child: Image.asset("navbar_logo.png")),
+            IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () => {print("Menu clicado")},
+              color: AppColors.navbarFont,
+            ),
+            Image.asset("navbar_logo.png"),
             IconButton(
               onPressed: () => {},
-              icon: Icon(Icons.search, color: AppColors.NAVBAR_FONT),
+              icon: Icon(Icons.shopping_cart, color: AppColors.navbarFont),
             ),
           ],
         ),
       ),
-      backgroundColor: AppColors.NAVBAR_BACKGROUND,
-      leading: IconButton(
-        icon: Icon(Icons.menu),
-        onPressed: () => {print("Menu clicado")},
-        color: AppColors.NAVBAR_FONT,
-      ),
+      backgroundColor: AppColors.navbarBackground,
     );
-    ;
   }
 }

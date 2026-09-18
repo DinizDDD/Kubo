@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kubo/ui/Colors.dart';
+import 'package:kubo/ui/app_colors.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});
@@ -14,11 +14,11 @@ class _BottomNavbarState extends State<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: AppColors.NAVBAR_BACKGROUND,
+      backgroundColor: AppColors.navbarBackground,
       type: BottomNavigationBarType.fixed,
 
-      selectedItemColor: AppColors.NAVBAR_FONT,
-      unselectedItemColor: AppColors.NAVBAR_FONT,
+      selectedItemColor: AppColors.navbarFont,
+      unselectedItemColor: AppColors.navbarFont,
 
       currentIndex: _currentIndex,
       onTap: (index) {

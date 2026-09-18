@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kubo/components/AppNavbar.dart';
-import 'package:kubo/components/BottomNavbar.dart';
+import 'package:kubo/components/app_navbar.dart';
+import 'package:kubo/components/bottom_navbar.dart';
 
 void main() {
   runApp(const MainApp());
