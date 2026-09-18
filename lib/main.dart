@@ -12,10 +12,11 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         bottomNavigationBar: BottomNavbar(),
         appBar: AppNavbar("Home", key: key),
-        body: Center(child: Text('Hello World!')),
+        body: Center(),
       ),
     );
   }
