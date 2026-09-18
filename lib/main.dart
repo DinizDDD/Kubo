@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kubo/components/AppNavbar.dart';
+import 'package:kubo/components/BottomNavbar.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,11 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        appBar: AppNavbar(),
+        bottomNavigationBar: BottomNavbar(),
+        body: Center(child: Text('Hello World!')),
       ),
     );
   }
