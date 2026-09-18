@@ -7,4 +7,7 @@ class AppColors {
   static const Color yellow_color = Color(0XFFFFC300);
   static const Color light_black_color = Color(0XFF111928);
   static const Color black_color = Color(0XFF000000);
+
+  static const Color NAVBAR_BACKGROUND = main_color;
+  static const Color NAVBAR_FONT = white_color;
 }

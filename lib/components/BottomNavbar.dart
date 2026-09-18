@@ -14,11 +14,11 @@ class _BottomNavbarState extends State<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: AppColors.main_color, 
-      type: BottomNavigationBarType.fixed,  
+      backgroundColor: AppColors.NAVBAR_BACKGROUND,
+      type: BottomNavigationBarType.fixed,
 
-      selectedItemColor: AppColors.white_color,
-      unselectedItemColor: AppColors.white_color,
+      selectedItemColor: AppColors.NAVBAR_FONT,
+      unselectedItemColor: AppColors.NAVBAR_FONT,
 
       currentIndex: _currentIndex,
       onTap: (index) {
@@ -27,22 +27,10 @@ class _BottomNavbarState extends State<BottomNavbar> {
         });
       },
       items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.shopping_bag),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.list),
-          label: '',
-        ),
-          BottomNavigationBarItem(
-          icon: Icon(Icons.person),
-          label: '',
-        ),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.list), label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
       ],
     );
   }

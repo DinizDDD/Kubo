@@ -14,8 +14,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        bottomNavigationBar: BottomNavbar(),
         appBar: AppNavbar("Home", key: key),
+        bottomNavigationBar: BottomNavbar(),
         body: Center(),
       ),
     );
