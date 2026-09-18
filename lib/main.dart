@@ -13,8 +13,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppNavbar(),
         bottomNavigationBar: BottomNavbar(),
+        appBar: AppNavbar("Home", key: key),
         body: Center(child: Text('Hello World!')),
       ),
     );
